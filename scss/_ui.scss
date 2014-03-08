@@ -1,0 +1,76 @@
+
+
+
+body {
+  background: #f5f5f5;
+  font-size: $bodyFontSize;
+  font-family: $body-font-family;}
+
+
+a {
+  color: inherit;
+}
+
+
+.name {
+  h1 {
+    color: #666;
+  }
+}
+
+.tweetBox {
+  background: $lightestColor;
+  border: darken($lightestColor,10%) 1px solid;
+  border-radius: $borderRadius;
+  padding: 10px;
+  margin: 2px;
+
+  h1 {
+    font-size: $tweetName;
+    font-weight: 500;
+    color: darken($lightestColor,50%);
+    margin: 0;
+  }
+
+  h2 {
+    font-size: $tweetUser;
+    color: darken($lightestColor,30%);
+    margin: 0;
+
+    span {
+      font-weight: 100;
+    }
+  }
+
+  .rankBox {
+
+  }
+
+  .content {
+    padding: 7px 0;
+    margin: 3px 0;
+    border-top:1px dotted darken($lightestColor, 10%);
+
+    a {
+      color: $link-color;
+      &:hover {
+        color: darken($link-color,20%);
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: $tweetText;
+    }
+  }
+
+
+  .tweetAction {
+    color: #999;
+
+    a {
+      font-size: $tweetText;
+    }
+
+  }
+}
