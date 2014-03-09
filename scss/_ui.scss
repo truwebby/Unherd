@@ -9,8 +9,13 @@ body {
 
 a {
   color: inherit;
+  &:hover, &:active, &:focus {
+    color: $link-color;
+  }
 }
 
+
+// Branding
 
 .name {
   h1 {
@@ -18,12 +23,22 @@ a {
   }
 }
 
+
+
+// Tweet content
+
 .tweetBox {
   background: $lightestColor;
   border: darken($lightestColor,10%) 1px solid;
   border-radius: $borderRadius;
   padding: 10px;
   margin: 2px;
+
+  &:hover {
+        .hoverEffect {
+          visibility: visible !important;
+        }
+      }
 
   h1 {
     font-size: $tweetName;
@@ -61,6 +76,14 @@ a {
     p {
       font-weight: 400;
       font-size: $tweetText;
+      margin: 0;
+    }
+
+    .media {
+      width: 300px;
+      height: 165px;
+      margin: 10px 0;
+      overflow: hidden;
     }
   }
 
@@ -71,6 +94,71 @@ a {
     a {
       font-size: $tweetText;
     }
+    
+    .hoverEffect {
+      visibility: hidden;
 
+    }
   }
+}
+
+
+// Sidebar Menu
+
+.notify {
+
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: -1;
+  color: $lightestColor ;
+  font-size: 11px;
+  line-height: 9px;
+  background: #f00;
+  border-radius: $global-radius ;
+  padding: 3px;
+
+}
+
+
+// Profile
+
+.profile {
+  margin: 10px 0 20px;
+  h4 {
+    font-size: $tweetName;
+    color: darken($lightestColor,30%);
+  }
+  h5 {
+    font-size: $tweetUser;
+    color: darken($lightestColor,50%);
+  }
+}
+
+.twttrStatus {
+  margin: 10px 0;
+  p {
+    margin-top: 10px;
+    color: darken($lightestColor,50%);
+  }
+}
+
+.preferences {
+  input[type="radio"] {
+    opacity: .4;
+  }
+  label {
+    color:  darken($lightestColor,50%);
+  }
+}
+.sectionHeader {
+  background: darken($lightestColor,50%)  ;
+  padding: 3px;
+  font-size: $tweetUser;
+}
+
+.tweetComposer {
+  top: 0;
+  right: 0;
+  z-index: 100;
 }

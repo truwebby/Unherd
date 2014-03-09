@@ -6,8 +6,7 @@
     <title>Unherd</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
-    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>-->
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>-->
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -16,20 +15,38 @@
           <div class="inner-wrap">
             <nav class="tab-bar fixed">
               <section class="left-small no-Br">
-                <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+                <b class="notify">5</b>
+                <a class="left-off-canvas-toggle menu-icon"><span></span></a>
               </section>
                 <div class="row">
                     <ul class="title-area left">
-                        <li class="name hide-for-small">
-                          <h1><a href="#">UnHerd</a></h1>
+                        <li class="name hide-for-small hide-for-medium">
+                          <h1><a href="#">UnHerd.co</a></h1>
                         </li>
                     </ul>
-                    <dl class="tabs" data-tab>
-                      <dd class="active"><a href="#panel2-1">Top Stories</a></dd>
-                      <dd><a href="#panel2-2">Chatter</a></dd>
-                      <dd><a href="#panel2-3">Me</a></dd>
-                    </dl>
+                    <!--<dl class="tabs" data-tab>-->
+                      <!--<dd class="active"><a href="#panel2-1">Top Stories</a></dd>-->
+                      <!--<dd><a href="#panel2-2">Chatter</a></dd>-->
+                      <!--<dd><a href="#panel2-3">Me</a></dd>-->
+                    <!--</dl>-->
 
+                </div>
+
+                <div class="tweetComposer right">
+                    <a href="#" data-dropdown="composer" data-options="align:left" class="button tiny"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                    <div id="composer" data-dropdown-content class="f-dropdown content">
+                      <form>
+                          <div class="row">
+                            <div class="large-24 columns">
+                              <label>
+                                <textarea placeholder="compose tweet" class="xlarge"></textarea>
+                                  <input type="submit" class="button tiny" value="Tweet">
+                              </label>
+
+                            </div>
+                          </div>
+                      </form>
+                    </div>
                 </div>
             </nav>
 
@@ -37,7 +54,7 @@
               <ul class="off-canvas-list">
                   <div class="large-24 columns">
                       <ul class="title-area left no-Mn-Lt">
-                        <li class="name hide-for-large left">
+                        <li class="name hide-for-large hide-for-medium left">
                           <h3 class="no-Mn"><a href="#">UnHerd</a></h3>
                         </li>
                       </ul>
@@ -46,16 +63,40 @@
                           <li><a href=""><i class="fa fa-sign-out"></i> </a> </li>
                       </ul>
                   </div>
-                  <div class="large-24 columns no-Pg">
-                      <div class="large-8 columns">
-                          <a href=""><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" /></a>
+                  <div class="large-24 columns no-Pg profile">
+                      <div class="large-7 columns no-Pg-Rt">
+                          <span class="th radius"><img src="https://pbs.twimg.com/profile_images/3368588846/256379c601670ec2a0adf2d6a678a46d_bigger.jpeg" alt="Aral"  class="radius" /></span>
                       </div>
-                      <div class="large-16 columns">
-                          <h4>Paul Irish</h4>
-                          <h5>@paul_irish</h5>
+                      <div class="large-17 columns">
+                          <h4>Aral Balkan</h4>
+                          <h5>@aral</h5>
                       </div>
                   </div>
 
+                  <div class="large-24 columns text-center no-Pg twttrStatus">
+                      <div class="large-8 small-8 columns no-Pg">
+                          <div class="large-24 columns sectionHeader">Tweets</div>
+                          <div class="large-24 columns no-Pg"><p>10.1K</p> </div>
+                      </div>
+                      <div class="large-8 small-8 columns no-Pg">
+                          <div class="large-24 columns sectionHeader">Followers</div>
+                          <div class="large-24 columns no-Pg"><p>9K</p></div>
+                      </div>
+                      <div class="large-8 small-8 columns no-Pg">
+                          <div class="large-24 columns sectionHeader">Following</div>
+                          <div class="large-24 columns no-Pg"><p>21K</p></div>
+                      </div>
+                  </div>
+
+                  <div class="large-24 columns no-Pg preferences">
+                      <h5 class="sectionHeader">Select Preferences</h5>
+                      <div class="large-24 columns">
+                          <form style="margin: 10px 0;">
+                            <label ><input type="radio" value="1" required=""> Top Stories</label>
+                            <label ><input type="radio" value="1" required=""> Chatter</label>
+                          </form>
+                      </div>
+                  </div>
 
               </ul>
             </aside>
@@ -69,9 +110,9 @@
                       <div class="large-24 columns">
                           <div class="tabs-content">
                               <div class="content active" id="panel2-1">
-                                    <div class="large-24 columns data-equalizer">
-                                        <ul class="large-block-grid-3 small-block-grid-1 medium-block-grid-2">
-                                            <li class="large-24 small-24 no-Pg columns">
+                                    <div class="large-24 columns ">
+                                        <ul id="mainSection"  class="large-block-grid-3 small-block-grid-1 medium-block-grid-2">
+                                            <li class="large-24 small-24 no-Pg columns optimize">
                                                 <article class="tweetBox clearfix">
                                                     <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
                                                     <div class="large-16 small-16 columns">
@@ -90,7 +131,198 @@
                                                     </div>
                                                     <div class="large-24 columns">
                                                         <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <div class="large-24 columns media text-center">
+                                                                <img src="img/concept.jpeg" alt="" />
+                                                            </div>
+                                                            <div class="large-24 columns">
+                                                                <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox right">
+                                                            <p class="label success radius round">21.90</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
                                                                 <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
                                                                 <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
                                                                 <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
@@ -121,7 +353,7 @@
                                                     </div>
                                                     <div class="large-24 columns">
                                                         <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
                                                                 <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
                                                                 <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
                                                                 <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
@@ -152,193 +384,7 @@
                                                     </div>
                                                     <div class="large-24 columns">
                                                         <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
                                                                 <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
                                                                 <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
                                                                 <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
@@ -373,8 +419,10 @@
 </div>
 
 
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

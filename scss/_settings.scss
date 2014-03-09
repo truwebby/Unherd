@@ -653,7 +653,7 @@
 
 // Off Canvas Menu Variables
 // $off-canvas-width: 250px;
-// $off-canvas-bg: #333;
+   $off-canvas-bg: #34363D;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
@@ -665,7 +665,7 @@
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba(#FFF, 0.7);
+   $off-canvas-link-color: inherit;
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
 
 // Off Canvas Menu Icon Variables
@@ -1085,9 +1085,9 @@
 // We use these to control border styles
 // $thumb-border-style: solid;
 // $thumb-border-width: 4px;
-// $thumb-border-color: #fff;
+   $thumb-border-color: rgba(255, 255, 255, 0.1);
 // $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+   $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0);
 
 // Radius and transition speed for thumbs
 // $thumb-radius: $global-radius;

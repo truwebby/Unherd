@@ -7917,7 +7917,7 @@ table tfoot tr td {
 .th {
   line-height: 0;
   display: inline-block;
-  border: solid 4px white;
+  border: solid 4px rgba(255, 255, 255, 0.1);
   max-width: 100%;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
@@ -7927,8 +7927,8 @@ table tfoot tr td {
 }
 /* line 54, ../bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th:hover, .th:focus {
-  -webkit-box-shadow: 0 0 6px 1px rgba(64, 155, 237, 0.5);
-  box-shadow: 0 0 6px 1px rgba(64, 155, 237, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(64, 155, 237, 0);
+  box-shadow: 0 0 6px 1px rgba(64, 155, 237, 0);
 }
 /* line 71, ../bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th.radius {
@@ -9911,7 +9911,7 @@ blockquote p {
   bottom: 0;
   position: absolute;
   overflow-y: auto;
-  background: #333333;
+  background: #34363d;
   z-index: 1001;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -9935,7 +9935,7 @@ blockquote p {
   bottom: 0;
   position: absolute;
   overflow-y: auto;
-  background: #333333;
+  background: #34363d;
   z-index: 1001;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -9972,8 +9972,8 @@ ul.off-canvas-list li label {
 ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #262626;
+  color: inherit;
+  border-bottom: 1px solid #27292e;
   transition: background 300ms ease;
 }
 /* line 229, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -11043,13 +11043,17 @@ body {
 a {
   color: inherit;
 }
+/* line 12, ../scss/_ui.scss */
+a:hover, a:active, a:focus {
+  color: #409bed;
+}
 
-/* line 16, ../scss/_ui.scss */
+/* line 21, ../scss/_ui.scss */
 .name h1 {
   color: #666;
 }
 
-/* line 21, ../scss/_ui.scss */
+/* line 30, ../scss/_ui.scss */
 .tweetBox {
   background: white;
   border: #e6e6e6 1px solid;
@@ -11057,47 +11061,125 @@ a {
   padding: 10px;
   margin: 2px;
 }
-/* line 28, ../scss/_ui.scss */
+/* line 38, ../scss/_ui.scss */
+.tweetBox:hover .hoverEffect {
+  visibility: visible !important;
+}
+/* line 43, ../scss/_ui.scss */
 .tweetBox h1 {
   font-size: 1em;
   font-weight: 500;
   color: gray;
   margin: 0;
 }
-/* line 35, ../scss/_ui.scss */
+/* line 50, ../scss/_ui.scss */
 .tweetBox h2 {
   font-size: 0.8em;
   color: #b3b3b3;
   margin: 0;
 }
-/* line 40, ../scss/_ui.scss */
+/* line 55, ../scss/_ui.scss */
 .tweetBox h2 span {
   font-weight: 100;
 }
-/* line 49, ../scss/_ui.scss */
+/* line 64, ../scss/_ui.scss */
 .tweetBox .content {
   padding: 7px 0;
   margin: 3px 0;
   border-top: 1px dotted #e6e6e6;
 }
-/* line 54, ../scss/_ui.scss */
+/* line 69, ../scss/_ui.scss */
 .tweetBox .content a {
   color: #409bed;
 }
-/* line 56, ../scss/_ui.scss */
+/* line 71, ../scss/_ui.scss */
 .tweetBox .content a:hover {
   color: #1168b6;
 }
-/* line 61, ../scss/_ui.scss */
+/* line 76, ../scss/_ui.scss */
 .tweetBox .content p {
   font-weight: 400;
   font-size: 0.9em;
+  margin: 0;
 }
-/* line 68, ../scss/_ui.scss */
+/* line 82, ../scss/_ui.scss */
+.tweetBox .content .media {
+  width: 300px;
+  height: 165px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+/* line 91, ../scss/_ui.scss */
 .tweetBox .tweetAction {
   color: #999;
 }
-/* line 71, ../scss/_ui.scss */
+/* line 94, ../scss/_ui.scss */
 .tweetBox .tweetAction a {
   font-size: 0.9em;
+}
+/* line 98, ../scss/_ui.scss */
+.tweetBox .tweetAction .hoverEffect {
+  visibility: hidden;
+}
+
+/* line 108, ../scss/_ui.scss */
+.notify {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: -1;
+  color: white;
+  font-size: 11px;
+  line-height: 9px;
+  background: #f00;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+/* line 126, ../scss/_ui.scss */
+.profile {
+  margin: 10px 0 20px;
+}
+/* line 128, ../scss/_ui.scss */
+.profile h4 {
+  font-size: 1em;
+  color: #b3b3b3;
+}
+/* line 132, ../scss/_ui.scss */
+.profile h5 {
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* line 138, ../scss/_ui.scss */
+.twttrStatus {
+  margin: 10px 0;
+}
+/* line 140, ../scss/_ui.scss */
+.twttrStatus p {
+  margin-top: 10px;
+  color: gray;
+}
+
+/* line 147, ../scss/_ui.scss */
+.preferences input[type="radio"] {
+  opacity: .4;
+}
+/* line 150, ../scss/_ui.scss */
+.preferences label {
+  color: gray;
+}
+
+/* line 154, ../scss/_ui.scss */
+.sectionHeader {
+  background: gray;
+  padding: 3px;
+  font-size: 0.8em;
+}
+
+/* line 160, ../scss/_ui.scss */
+.tweetComposer {
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
