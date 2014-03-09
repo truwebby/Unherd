@@ -11055,74 +11055,85 @@ a:hover, a:active, a:focus {
 
 /* line 30, ../scss/_ui.scss */
 .tweetBox {
+  position: relative;
   background: white;
   border: #e6e6e6 1px solid;
   border-radius: 3px;
   padding: 10px;
   margin: 2px;
 }
-/* line 38, ../scss/_ui.scss */
+/* line 39, ../scss/_ui.scss */
 .tweetBox:hover .hoverEffect {
   visibility: visible !important;
 }
-/* line 43, ../scss/_ui.scss */
+/* line 44, ../scss/_ui.scss */
 .tweetBox h1 {
   font-size: 1em;
   font-weight: 500;
   color: gray;
   margin: 0;
 }
-/* line 50, ../scss/_ui.scss */
+/* line 51, ../scss/_ui.scss */
 .tweetBox h2 {
   font-size: 0.8em;
   color: #b3b3b3;
   margin: 0;
 }
-/* line 55, ../scss/_ui.scss */
+/* line 56, ../scss/_ui.scss */
 .tweetBox h2 span {
   font-weight: 100;
 }
-/* line 64, ../scss/_ui.scss */
+/* line 65, ../scss/_ui.scss */
 .tweetBox .content {
   padding: 7px 0;
   margin: 3px 0;
   border-top: 1px dotted #e6e6e6;
 }
-/* line 69, ../scss/_ui.scss */
+/* line 70, ../scss/_ui.scss */
 .tweetBox .content a {
   color: #409bed;
 }
-/* line 71, ../scss/_ui.scss */
+/* line 72, ../scss/_ui.scss */
 .tweetBox .content a:hover {
   color: #1168b6;
 }
-/* line 76, ../scss/_ui.scss */
+/* line 77, ../scss/_ui.scss */
 .tweetBox .content p {
   font-weight: 400;
   font-size: 0.9em;
   margin: 0;
 }
-/* line 82, ../scss/_ui.scss */
+/* line 83, ../scss/_ui.scss */
 .tweetBox .content .media {
   width: 300px;
   height: 165px;
   margin: 10px 0;
   overflow: hidden;
 }
-/* line 91, ../scss/_ui.scss */
+/* line 92, ../scss/_ui.scss */
 .tweetBox .tweetAction {
   color: #999;
 }
-/* line 94, ../scss/_ui.scss */
+/* line 95, ../scss/_ui.scss */
 .tweetBox .tweetAction a {
   font-size: 0.9em;
 }
-/* line 98, ../scss/_ui.scss */
+/* line 99, ../scss/_ui.scss */
 .tweetBox .tweetAction .hoverEffect {
   visibility: hidden;
 }
+/* line 105, ../scss/_ui.scss */
+.tweetBox .newAlert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #f04124;
+  border-right: 15px solid transparent;
+}
 
-/* line 108, ../scss/_ui.scss */
+/* line 119, ../scss/_ui.scss */
 .notify {
   position: absolute;
   top: 4px;
@@ -11136,52 +11147,52 @@ a:hover, a:active, a:focus {
   padding: 3px;
 }
 
-/* line 126, ../scss/_ui.scss */
+/* line 137, ../scss/_ui.scss */
 .profile {
   margin: 10px 0 20px;
 }
-/* line 128, ../scss/_ui.scss */
+/* line 139, ../scss/_ui.scss */
 .profile h4 {
   font-size: 1em;
   color: #b3b3b3;
 }
-/* line 132, ../scss/_ui.scss */
+/* line 143, ../scss/_ui.scss */
 .profile h5 {
   font-size: 0.8em;
   color: gray;
 }
 
-/* line 138, ../scss/_ui.scss */
+/* line 149, ../scss/_ui.scss */
 .twttrStatus {
   margin: 10px 0;
 }
-/* line 140, ../scss/_ui.scss */
+/* line 151, ../scss/_ui.scss */
 .twttrStatus p {
   margin-top: 10px;
   color: gray;
 }
 
-/* line 147, ../scss/_ui.scss */
+/* line 158, ../scss/_ui.scss */
 .preferences input[type="radio"] {
   opacity: .4;
 }
-/* line 150, ../scss/_ui.scss */
+/* line 161, ../scss/_ui.scss */
 .preferences label {
   color: gray;
 }
 
-/* line 154, ../scss/_ui.scss */
+/* line 165, ../scss/_ui.scss */
 .sectionHeader {
   background: gray;
   padding: 3px;
   font-size: 0.8em;
 }
 
-/* line 160, ../scss/_ui.scss */
+/* line 171, ../scss/_ui.scss */
 .tweetComposer, .tweetReply {
   z-index: 100;
 }
-/* line 164, ../scss/_ui.scss */
+/* line 175, ../scss/_ui.scss */
 .tweetComposer a, .tweetReply a {
   padding: 6px;
   border-radius: 3px;
@@ -11190,23 +11201,23 @@ a:hover, a:active, a:focus {
   top: 4px;
   right: 4px;
 }
-/* line 173, ../scss/_ui.scss */
+/* line 184, ../scss/_ui.scss */
 .tweetComposer .content, .tweetReply .content {
   box-shadow: -6px 6px 15px 0px rgba(0, 0, 0, 0.2);
   padding: 1em;
   max-width: 275px;
   border-radius: 3px;
 }
-/* line 179, ../scss/_ui.scss */
+/* line 190, ../scss/_ui.scss */
 .tweetComposer .content span, .tweetReply .content span {
   color: #b3b3b3;
 }
 
-/* line 185, ../scss/_ui.scss */
+/* line 196, ../scss/_ui.scss */
 .tweetReply {
   background: #fafafa;
 }
-/* line 188, ../scss/_ui.scss */
+/* line 199, ../scss/_ui.scss */
 .tweetReply textarea {
   margin-bottom: 10px;
 }

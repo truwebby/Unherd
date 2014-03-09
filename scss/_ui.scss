@@ -28,6 +28,7 @@ a {
 // Tweet content
 
 .tweetBox {
+  position: relative;
   background: $lightestColor;
   border: darken($lightestColor,10%) 1px solid;
   border-radius: $borderRadius;
@@ -99,6 +100,16 @@ a {
       visibility: hidden;
 
     }
+  }
+
+  .newAlert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+	height: 0;
+	border-top: 15px solid #f04124;
+	border-right: 15px solid transparent;
   }
 }
 
