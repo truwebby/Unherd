@@ -57,9 +57,9 @@
 // We use these as default colors throughout
    $primary-color: #409bed;
 // $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
+   $alert-color: #f04124;
+   $success-color: #2ECC71;
+   $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
@@ -842,22 +842,22 @@
 // $include-html-media-classes: $include-html-classes;
 
 // We use this to se the prog bar height
-// $progress-bar-height: rem-calc(25);
+   $progress-bar-height: rem-calc(15);
 // $progress-bar-color: #f6f6f6  ;
 
 // We use these to control the border styles
-// $progress-bar-border-color: scale-color(#fff, $lightness: -20%);
+   $progress-bar-border-color: scale-color(#eee, $lightness: 20%);
 // $progress-bar-border-size: 1px;
 // $progress-bar-border-style: solid;
 // $progress-bar-border-radius: $global-radius;
 
 // We use these to control the margin & padding
-// $progress-bar-pad: rem-calc(2);
+   $progress-bar-pad: rem-calc(4);
 // $progress-bar-margin-bottom: rem-calc(10);
 
 // We use these to set the meter colors
 // $progress-meter-color: $primary-color;
-// $progress-meter-secondary-color: $secondary-color;
+   $progress-meter-secondary-color: $warning-color;
 // $progress-meter-success-color: $success-color;
 // $progress-meter-alert-color: $alert-color;
 
@@ -1106,9 +1106,9 @@
 // $has-tip-font-color-hover: $primary-color;
 // $has-tip-cursor-type: help;
 
-// $tooltip-padding: rem-calc(12);
+   $tooltip-padding: rem-calc(4);
 // $tooltip-bg: #333;
-// $tooltip-font-size: rem-calc(14);
+   $tooltip-font-size: rem-calc(10);
 // $tooltip-font-weight: normal;
 // $tooltip-font-color: #fff;
 // $tooltip-line-height: 1.3;

@@ -33,20 +33,20 @@
                 </div>
 
                 <div class="tweetComposer right">
-                    <a href="#" data-dropdown="composer" data-options="align:left" class="button tiny"><i class="fa fa-pencil-square-o fa-2x"></i></a>
-                    <div id="composer" data-dropdown-content class="f-dropdown content">
-                      <form>
-                          <div class="row">
-                            <div class="large-24 columns">
-                              <label>
-                                <textarea placeholder="compose tweet" class="xlarge"></textarea>
-                                  <input type="submit" class="button tiny" value="Tweet">
-                              </label>
-
-                            </div>
-                          </div>
-                      </form>
+                    <a href="#" data-dropdown="composer" data-options="align:left" class="button"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                        <div id="composer" data-dropdown-content class="f-dropdown content">
+                          <form>
+                              <div class="row">
+                                 <label>
+                                    <textarea placeholder="Compose tweet" rows="5" class="radius"></textarea>
+                                 </label>
+                                 <input type="submit" class="button tiny radius no-Mn" value="Tweet">
+                                 <span style="position: relative;"><i class="fa fa-picture-o"></i><small> Add image</small> <input type="file" style="position: absolute; top:0; left: 0; opacity: 0 ;" /></span>
+                                 <span class="no-Mn right">140</span>
+                              </div>
+                          </form>
                     </div>
+
                 </div>
             </nav>
 
@@ -58,10 +58,13 @@
                           <h3 class="no-Mn"><a href="#">UnHerd</a></h3>
                         </li>
                       </ul>
-                      <ul class="large-block-grid-2 right">
-                          <li><a href=""><i class="fa fa-envelope-o"></i> </a> </li>
+                      <ul class="large-block-grid-2 left">
+                          <li><a href="" data-dropdown="message" data-options="is_hover:true"><i class="fa fa-envelope-o"></i> </a> </li>
                           <li><a href=""><i class="fa fa-sign-out"></i> </a> </li>
                       </ul>
+
+
+
                   </div>
                   <div class="large-24 columns no-Pg profile">
                       <div class="large-7 columns no-Pg-Rt">
@@ -79,11 +82,11 @@
                           <div class="large-24 columns no-Pg"><p>10.1K</p> </div>
                       </div>
                       <div class="large-8 small-8 columns no-Pg">
-                          <div class="large-24 columns sectionHeader">Followers</div>
+                          <div class="large-24 columns sectionHeader">Following</div>
                           <div class="large-24 columns no-Pg"><p>9K</p></div>
                       </div>
                       <div class="large-8 small-8 columns no-Pg">
-                          <div class="large-24 columns sectionHeader">Following</div>
+                          <div class="large-24 columns sectionHeader">Followers</div>
                           <div class="large-24 columns no-Pg"><p>21K</p></div>
                       </div>
                   </div>
@@ -120,8 +123,44 @@
                                                         <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
                                                     </div>
                                                     <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "22.90" > <span class="meter" style="width: 90%"></span> </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" data-dropdown="reply" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "18.00" > <span class="meter" style="width: 75%"></span> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 small-24 columns no-Pg">
@@ -151,39 +190,10 @@
                                                         <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
                                                     </div>
                                                     <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns optimize">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "17.00" > <span class="meter" style="width: 70%"></span> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 small-24 columns no-Pg">
@@ -218,8 +228,10 @@
                                                         <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
                                                     </div>
                                                     <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
+                                                        <div class="rankBox">
+                                                            <div class="progress secondary round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "10.00" > <span class="meter" style="width: 35%"></span> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 small-24 columns no-Pg">
@@ -249,8 +261,10 @@
                                                         <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
                                                     </div>
                                                     <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
+                                                        <div class="rankBox">
+                                                            <div class="progress alert round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "5.00" > <span class="meter" style="width: 25%"></span> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 small-24 columns no-Pg">
@@ -280,8 +294,10 @@
                                                         <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
                                                     </div>
                                                     <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
+                                                        <div class="rankBox">
+                                                            <div class="progress alert round">
+                                                                <span  data-tooltip  class = "has-tip tip-top"  title = "5.00" > <span class="meter" style="width: 25%"></span> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 small-24 columns no-Pg">
@@ -303,99 +319,7 @@
                                                 </article>
 
                                             </li>
-                                            <li class="large-24 small-24 no-Pg columns optimize">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
 
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
-                                            <li class="large-24 small-24 no-Pg columns">
-                                                <article class="tweetBox clearfix">
-                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-                                                    <div class="large-16 small-16 columns">
-                                                        <h1><a href="">Paul Irish</a> </h1>
-                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
-                                                    </div>
-                                                    <div class="large-5 small-5 columns">
-                                                        <div class="rankBox right">
-                                                            <p class="label success radius round">21.90</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 small-24 columns no-Pg">
-                                                        <div class="content">
-                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="large-24 columns">
-                                                        <div class="tweetAction">
-                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
-                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
-                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
-                                                                <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
-                                                                <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
-                                                            </ul>
-                                                        </div>
-
-                                                    </div>
-                                                </article>
-
-                                            </li>
 
 
                                         </ul>
@@ -418,7 +342,58 @@
           </div>
 </div>
 
+    <!-- Tweet reply box -->
 
+    <div class="tweetReply">
+            <div id="reply" data-dropdown-content class="f-dropdown content">
+              <form>
+                  <div class="row">
+                     <label>
+                        <textarea placeholder="@paul" rows="5" class="radius"></textarea>
+                     </label>
+                     <input type="submit" class="button tiny radius no-Mn" value="Tweet">
+                     <span style="position: relative;"><i class="fa fa-picture-o"></i><small> Add image</small> <input type="file" style="position: absolute; top:0; left: 0; opacity: 0 ;" /></span>
+                     <span class="no-Mn right">140</span>
+                  </div>
+              </form>
+        </div>
+    </div>
+
+    <!-- Message Box -->
+
+     <ul id="message" class="f-dropdown" data-dropdown-content>
+          <li><a href="#" data-reveal-id="msgModal" data-reveal>Message</a></li>
+          <li><a href="#">This is another</a></li>
+          <li><a href="#">Yet another</a></li>
+     </ul>
+
+    <!-- Message modal -->
+    <div id="msgModal" class="reveal-modal small" data-reveal style="z-index: 100;">
+      <a class="close-reveal-modal">&#215;</a>
+        <article class="tweetBox clearfix">
+            <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+            <div class="large-21 small-16 columns">
+                <h1><a href="">Paul Irish</a> </h1>
+                <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+            </div>
+            <div class="large-24 small-24 columns no-Pg">
+                <div class="content">
+                    <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                </div>
+            </div>
+            <div class="large-24 columns">
+                <div class="tweetAction">
+                    <ul class="inline-list right no-Mn-Bm hoverEffect">
+                        <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                        <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                        <li><a href="" title="Reply"><i class="fa fa-reply"></i> </a></li>
+                        <li><a href="" title="Forward"><i class="fa fa-mail-forward"></i> </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

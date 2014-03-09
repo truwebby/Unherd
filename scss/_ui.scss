@@ -2,7 +2,7 @@
 
 
 body {
-  background: #f5f5f5;
+  background: #F0F3F5;
   font-size: $bodyFontSize;
   font-family: $body-font-family;}
 
@@ -157,8 +157,35 @@ a {
   font-size: $tweetUser;
 }
 
-.tweetComposer {
-  top: 0;
-  right: 0;
+.tweetComposer, .tweetReply {
+
   z-index: 100;
+
+  a {
+    padding: 6px;
+    border-radius: 3px;
+    font-size: .75em;
+    position: fixed;
+    top: 4px;
+    right: 4px;
+  }
+
+  .content {
+    box-shadow: -6px 6px 15px 0px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    max-width: 275px;
+    border-radius: 3px;
+
+    span {
+      color: darken($lightestColor,30%);
+    }
+  }
+}
+
+.tweetReply {
+  background: #fafafa;
+
+  textarea {
+    margin-bottom: 10px;
+  }
 }
