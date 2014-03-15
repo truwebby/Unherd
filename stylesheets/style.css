@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 300, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.0/";
@@ -11220,4 +11221,21 @@ a:hover, a:active, a:focus {
 /* line 199, ../scss/_ui.scss */
 .tweetReply textarea {
   margin-bottom: 10px;
+}
+
+/* line 205, ../scss/_ui.scss */
+.messageBox {
+  margin: 10px 0;
+}
+
+/* line 209, ../scss/_ui.scss */
+.messageModal {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+/* line 214, ../scss/_ui.scss */
+.messageModal blockquote {
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 1px;
 }
