@@ -400,7 +400,19 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.masonry.js"></script>
     <script src="js/app.js"></script>
+	
+	<script>
+	var $containter = $('#mainSection');
+	$containter.imagesLoaded( function(){
+		$containter.masonry({
+			itemSelector: '.optimize',
+        	isAnimated: !Modernizr.csstransitions,
+        	isFitWidth: true
+		});	
+	});
+	</script>
+	
   </body>
 </html>
