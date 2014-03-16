@@ -7191,13 +7191,13 @@ dialog > :last-child, .reveal-modal > :last-child {
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
 dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   line-height: 1;
   position: absolute;
-  top: 0.5rem;
+  top: 0.3125rem;
   right: 0.6875rem;
   color: #aaaaaa;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
 }
 
@@ -11231,15 +11231,17 @@ a:hover, a:active, a:focus {
 .messageModal {
   max-height: 500px;
   overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
 }
-/* line 214, ../scss/_ui.scss */
+/* line 216, ../scss/_ui.scss */
 .messageModal blockquote {
   margin: 0;
   border-bottom: 1px solid #ddd;
   padding: 1px;
 }
 
-/* line 222, ../scss/_ui.scss */
+/* line 224, ../scss/_ui.scss */
 .messageLink {
   display: block;
   padding: 10% 5%;
@@ -11249,7 +11251,7 @@ a:hover, a:active, a:focus {
   width: 100%;
 }
 
-/* line 231, ../scss/_ui.scss */
+/* line 233, ../scss/_ui.scss */
 .reveal-modal-bg {
   z-index: 90;
 }

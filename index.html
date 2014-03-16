@@ -6,12 +6,12 @@
     <title>Unherd</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
-    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
 	
 	<style>
-		.reveal-modal-bg { z-index:90;}
-		.messageLink { display: block; padding: 10% 5%; float: left; position: absolute; z-index: 10; width: 100%;}
+		
+		
 	</style>
 	
   </head>
@@ -401,10 +401,13 @@
 
     <!-- Message modal -->
     <div id="msgModal" class="reveal-modal small messageModal" data-reveal 	>
+	<ul class="breadcrumbs no-Br-Rs">
+	  <li class="current"><a href="#">Messages</a></li>
+	</ul>
       <a class="close-reveal-modal">&#215;</a>
         <article class="tweetBox clearfix no-Br">
-            <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius round"> </div>
-            <div class="large-21 small-16 columns">
+            <div class="large-2 small-2 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius round"> </div>
+            <div class="large-22 small-22 columns">
                 <h1><a href="">Paul Irish</a> </h1>
                 <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
             </div>
@@ -430,10 +433,10 @@
 	
 	<blockquote>
 		<article class="tweetBox clearfix no-Br">
-			<div class="large-2 small-2 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-			<div class="large-22 small-22 columns">
-				<h1><a href="">Paul Irish</a> </h1>
-				<h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+			<div class="large-1 small-1 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+			<div class="large-23 small-23 columns">
+				<h1 class="left"><a href="">Paul Irish</a> </h1>
+				<h2 class="left"><a href="">&nbsp; | @paul_irish </a> <span>| 3s</span></h2>
 			</div>
 			
 			<div class="large-24 small-24 columns no-Pg">
@@ -446,10 +449,10 @@
 	
 	<blockquote>
 		<article class="tweetBox clearfix no-Br">
-			<div class="large-2 small-2 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
-			<div class="large-22 small-22 columns">
-				<h1><a href="">Paul Irish</a> </h1>
-				<h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+			<div class="large-1 small-1 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"> </div>
+			<div class="large-23 small-23 columns">
+				<h1 class="left"><a href="">Paul Irish</a> </h1>
+				<h2 class="left"><a href="">&nbsp; | @paul_irish </a> <span>| 3s</span></h2>
 			</div>
 			
 			<div class="large-24 small-24 columns no-Pg">
@@ -475,6 +478,10 @@
 	
 	<!-- All Message notifications -->
 	<div id="msgNotification" class="reveal-modal small messageModal" data-reveal>
+	<ul class="breadcrumbs no-Br-Rs">
+	  <li><a href="#">Messages</a></li>
+	  <li class="current"><a href="#">for So and so</a></li>
+	</ul>
       <a class="close-reveal-modal">&#215;</a>
         <article class="tweetBox clearfix no-Br">
 			<a href="" class="messageLink" ></a>
