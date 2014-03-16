@@ -219,6 +219,17 @@ a {
 	}
 }
 
+.messageLink { 
+	display: block; 
+	padding: 10% 5%; 
+	float: left; 
+	position: absolute; 
+	z-index: 10; 
+	width: 100%;
+	}
 
+.reveal-modal-bg { 
+	z-index:90;
+	}
 
 

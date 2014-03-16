@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>-->
     <script src="bower_components/modernizr/modernizr.js"></script>
+	
+	<style>
+		.reveal-modal-bg { z-index:90;}
+		.messageLink { display: block; padding: 10% 5%; float: left; position: absolute; z-index: 10; width: 100%;}
+	</style>
+	
   </head>
   <body>
 
@@ -365,13 +371,36 @@
     <!-- Message Box -->
 
      <ul id="message" class="f-dropdown" data-dropdown-content>
-          <li><a href="#" data-reveal-id="msgModal" data-reveal>Message</a></li>
-          <li><a href="#">This is another</a></li>
-          <li><a href="#">Yet another</a></li>
+          <li><a href="#" data-reveal-id="msgModal" data-reveal>
+			<div class="large-24 columns no-Pg ">
+				<div class="large-4 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"></div>
+				<div class="large-20 columns"><p class="no-Mn">Paul Irish</p></div>
+			</div>
+			<div class="clearfix"></div>
+			</a>
+			</li>
+			<li class=""></li>
+          <li><a href="#">
+		  <div class="large-24 columns no-Pg">
+				<div class="large-4 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"></div>
+				<div class="large-20 columns"><p class="no-Mn">Paul Irish</p></div>
+			</div>
+			<div class="clearfix"></div>
+		  </a>
+		  </li>
+          <li><a href="#">
+		  <div class="large-24 columns no-Pg">
+				<div class="large-4 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius"></div>
+				<div class="large-20 columns"><p class="no-Mn">Paul Irish</p></div>
+			</div>
+			<div class="clearfix"></div>
+		  </a>
+		  </li>
+		  <li class="text-center"><a href="" data-reveal-id="msgNotification" data-reveal><small>View all messages</small></a></li>
      </ul>
 
     <!-- Message modal -->
-    <div id="msgModal" class="reveal-modal small messageModal" data-reveal style="z-index: 100;">
+    <div id="msgModal" class="reveal-modal small messageModal" data-reveal 	>
       <a class="close-reveal-modal">&#215;</a>
         <article class="tweetBox clearfix no-Br">
             <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius round"> </div>
@@ -443,6 +472,31 @@
 			
         </article>
     </div>
+	
+	<!-- All Message notifications -->
+	<div id="msgNotification" class="reveal-modal small messageModal" data-reveal>
+      <a class="close-reveal-modal">&#215;</a>
+        <article class="tweetBox clearfix no-Br">
+			<a href="" class="messageLink" ></a>
+            <div class="large-1 small-1 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="radius round"> </div>
+            <div class="large-23 small-23 columns">
+                <h1 class="left"><a href="">Paul Irish </a> </h1>
+                <h2 class="left"><a href="">&nbsp; | @paul_irish </a> <span>| 3s</span></h2>
+            </div>
+            <div class="large-24 small-24 columns no-Pg">
+                <div class="content ">
+                    <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+		
+        </article>
+		
+		
+    </div>
+	
+	
+	
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
