@@ -2,7 +2,7 @@
 
 
 body {
-  background: #F0F3F5;
+  background: #f8f8f8;
   font-size: $bodyFontSize;
   font-family: $body-font-family;}
 
@@ -170,9 +170,12 @@ a {
 //    opacity: .4;
 //  }
   label {
-    color:  $link-color;
+    color:lighten($link-color,15%)  ;
   }
 }
+.topHeader {
+	border-bottom: 1px solid darken($lightestColor, 70%);
+} 
 .sectionHeader {
   background: darken($lightestColor,50%)  ;
   padding: 3px;
@@ -251,5 +254,9 @@ a {
 .scrollTop {
 	position:fixed;
 	bottom:0;
-	left:0;
+	left:0; 
+	
+	a {
+		font-size: 1.4em !important;
+	}
 }

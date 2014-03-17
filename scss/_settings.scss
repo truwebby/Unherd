@@ -56,7 +56,7 @@
 
 // We use these as default colors throughout
    $primary-color: #409bed;
-// $secondary-color: #e7e7e7;
+   $secondary-color: #e7e7e7;
    $alert-color: #f04124;
    $success-color: #2ECC71;
    $warning-color: #f08a24;
@@ -665,7 +665,7 @@
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-   $off-canvas-link-color: $primary-color;
+   $off-canvas-link-color: darken($secondary-color,25%);
    $off-canvas-link-border-bottom: 0px solid scale-color($off-canvas-bg, $lightness: -25%);
 
 // Off Canvas Menu Icon Variables

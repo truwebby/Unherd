@@ -9972,7 +9972,7 @@ ul.off-canvas-list li label {
 ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
-  color: #409bed;
+  color: #a7a7a7;
   border-bottom: 0px solid #27292e;
   transition: background 300ms ease;
 }
@@ -11034,7 +11034,7 @@ th {
 
 /* line 4, ../scss/_ui.scss */
 body {
-  background: #F0F3F5;
+  background: #f8f8f8;
   font-size: 1em;
   font-family: "Open Sans", sans-serif !important;
 }
@@ -11186,21 +11186,26 @@ a:hover, a:active, a:focus {
 
 /* line 172, ../scss/_ui.scss */
 .preferences label {
-  color: #409bed;
+  color: #86c0f4;
 }
 
 /* line 176, ../scss/_ui.scss */
+.topHeader {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+/* line 179, ../scss/_ui.scss */
 .sectionHeader {
   background: gray;
   padding: 3px;
   font-size: 0.8em;
 }
 
-/* line 182, ../scss/_ui.scss */
+/* line 185, ../scss/_ui.scss */
 .tweetComposer, .tweetReply {
   z-index: 100;
 }
-/* line 186, ../scss/_ui.scss */
+/* line 189, ../scss/_ui.scss */
 .tweetComposer a, .tweetReply a {
   padding: 6px;
   border-radius: 3px;
@@ -11209,47 +11214,47 @@ a:hover, a:active, a:focus {
   top: 45px;
   right: -2px;
 }
-/* line 195, ../scss/_ui.scss */
+/* line 198, ../scss/_ui.scss */
 .tweetComposer .content, .tweetReply .content {
   box-shadow: -6px 6px 15px 0px rgba(0, 0, 0, 0.2);
   padding: 1em;
   max-width: 275px;
   border-radius: 3px;
 }
-/* line 201, ../scss/_ui.scss */
+/* line 204, ../scss/_ui.scss */
 .tweetComposer .content span, .tweetReply .content span {
   color: #b3b3b3;
 }
 
-/* line 207, ../scss/_ui.scss */
+/* line 210, ../scss/_ui.scss */
 .tweetReply {
   background: #fafafa;
 }
-/* line 210, ../scss/_ui.scss */
+/* line 213, ../scss/_ui.scss */
 .tweetReply textarea {
   margin-bottom: 10px;
 }
 
-/* line 216, ../scss/_ui.scss */
+/* line 219, ../scss/_ui.scss */
 .messageBox {
   margin: 10px 0;
 }
 
-/* line 220, ../scss/_ui.scss */
+/* line 223, ../scss/_ui.scss */
 .messageModal {
   max-height: 500px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
 }
-/* line 227, ../scss/_ui.scss */
+/* line 230, ../scss/_ui.scss */
 .messageModal blockquote {
   margin: 0;
   border-bottom: 1px solid #ddd;
   padding: 1px;
 }
 
-/* line 235, ../scss/_ui.scss */
+/* line 238, ../scss/_ui.scss */
 .messageLink {
   display: block;
   padding: 10% 5%;
@@ -11259,19 +11264,23 @@ a:hover, a:active, a:focus {
   width: 100%;
 }
 
-/* line 244, ../scss/_ui.scss */
+/* line 247, ../scss/_ui.scss */
 .reveal-modal-bg {
   z-index: 90;
 }
 
-/* line 248, ../scss/_ui.scss */
+/* line 251, ../scss/_ui.scss */
 .circular {
   border-radius: 50%;
 }
 
-/* line 251, ../scss/_ui.scss */
+/* line 254, ../scss/_ui.scss */
 .scrollTop {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+/* line 259, ../scss/_ui.scss */
+.scrollTop a {
+  font-size: 1.4em !important;
 }
