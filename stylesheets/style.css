@@ -9972,8 +9972,8 @@ ul.off-canvas-list li label {
 ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
-  color: inherit;
-  border-bottom: 1px solid #27292e;
+  color: #409bed;
+  border-bottom: 0px solid #27292e;
   transition: background 300ms ease;
 }
 /* line 229, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -11206,8 +11206,8 @@ a:hover, a:active, a:focus {
   border-radius: 3px;
   font-size: .75em;
   position: fixed;
-  top: 50px;
-  right: 4px;
+  top: 45px;
+  right: -2px;
 }
 /* line 195, ../scss/_ui.scss */
 .tweetComposer .content, .tweetReply .content {
@@ -11267,4 +11267,11 @@ a:hover, a:active, a:focus {
 /* line 248, ../scss/_ui.scss */
 .circular {
   border-radius: 50%;
+}
+
+/* line 251, ../scss/_ui.scss */
+.scrollTop {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

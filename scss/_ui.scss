@@ -188,8 +188,8 @@ a {
     border-radius: 3px;
     font-size: .75em;
     position: fixed;
-    top: 50px;
-    right: 4px;
+    top: 45px;
+    right: -2px;
   }
 
   .content {
@@ -248,4 +248,8 @@ a {
 .circular {
 		border-radius: 50%;
 	}
-
+.scrollTop {
+	position:fixed;
+	bottom:0;
+	left:0;
+}

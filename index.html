@@ -4,16 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unherd</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+	
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
-	
-	<style>
-		
-		
-	</style>
-	
   </head>
   <body>
 
@@ -27,7 +31,7 @@
                 <div class="row">
                     <ul class="title-area left">
                         <li class="name hide-for-small hide-for-medium">
-                          <h1><a href="#">UnHerd.co</a></h1>
+                          <h1><a href="#"><img src="img/unherd-icon.png" width="40" alt="Unherd"/></a></h1>
                         </li>
                     </ul>
                     <!--<dl class="tabs" data-tab>-->
@@ -39,9 +43,7 @@
                 </div>
 
                 <div class="tweetComposer right">
-					<span data-tooltip class="has-tip" title="New Tweet">
 						<a href="#" data-dropdown="composer" data-options="align:left" class="button"><i class="fa fa-pencil-square-o fa-2x"></i></a>
-					</span>
                         <div id="composer" data-dropdown-content class="f-dropdown content">
                           <form>
                               <div class="row">
@@ -49,7 +51,7 @@
                                     <textarea placeholder="Compose tweet" rows="5" class="radius"></textarea>
                                  </label>
                                  <input type="submit" class="button tiny radius no-Mn" value="Tweet">
-                                 <span style="position: relative;"><i class="fa fa-picture-o"></i><small> Add image</small> <input type="file" style="position: absolute; top:0; left: 0; opacity: 0 ;" /></span>
+                                 <span style="position: relative; left:10px;"><i class="fa fa-picture-o"></i><small> Add image</small> <input type="file" style="position: absolute; top:0; left: 0; opacity: 0 ;" /></span>
                                  <span class="no-Mn right">140</span>
                               </div>
                           </form>
@@ -67,8 +69,8 @@
                         </li>
                       </ul>
                       <ul class="large-block-grid-2 left">
-                          <li><a href="" data-dropdown="message" data-options="is_hover:true"><i class="fa fa-envelope-o"></i> </a> </li>
-                          <li><a href=""><i class="fa fa-sign-out"></i> </a> </li>
+                          <li><a href="" data-dropdown="message" data-options="is_hover:true" class="no-Bd"><i class="fa fa-envelope-o"></i> </a> </li>
+                          <li><a href="" class="no-Bd"><i class="fa fa-sign-out"></i></a></li>
                       </ul>
 
 
@@ -114,7 +116,7 @@
 
 
 
-            <section class="main-section">
+            <section id="topPosition" class="main-section">
               <!-- content goes here -->
 
                 <div class="row" >
@@ -125,7 +127,8 @@
                                         <ul id="mainSection"  class="large-block-grid-3 small-block-grid-1 medium-block-grid-2">
                                             <li class="large-24 small-24 no-Pg columns optimize">
                                                 <article class="tweetBox clearfix">
-                                                    <span class="newAlert"></span>
+												<div data-tooltip class="tip-top radius" title="New Tweet"><span class="newAlert"></span></div>
+                                                    
 													<span class="retweetStatus">Retweeted by <a href=""> Aral Balkan</a></span>
                                                     <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="circular"> </div>
                                                     <div class="large-16 small-16 columns">
@@ -194,7 +197,7 @@
                                             </li>
                                             <li class="large-24 small-24 no-Pg columns optimize">
                                                 <article class="tweetBox clearfix">
-                                                    <span class="newAlert"></span>
+                                                    <div data-tooltip class="tip-top radius" title="New Tweet"><span class="newAlert"></span></div>
                                                     <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="circular"> </div>
                                                     <div class="large-16 small-16 columns">
                                                         <h1><a href="">Paul Irish</a> </h1>
@@ -315,6 +318,115 @@
                                                     <div class="large-24 small-24 columns no-Pg">
                                                         <div class="content">
                                                             <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply" class="marginTop"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward" class="marginTop"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+											<li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+												<div data-tooltip class="tip-top radius" title="New Tweet"><span class="newAlert"></span></div>
+                                                    
+													<span class="retweetStatus">Retweeted by <a href=""> Aral Balkan</a></span>
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="circular"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top radius"  title = "Relevance score: 22.90" > <span class="meter" style="width: 90%"></span> </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" data-dropdown="reply" title="Reply" class="marginTop"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward" class="marginTop"><i class="fa fa-mail-forward" class="marginTop"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="circular"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top radius"  title = "Relevance score: 18.00" > <span class="meter" style="width: 75%"></span> </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 columns">
+                                                        <div class="tweetAction">
+                                                            <ul class="inline-list right no-Mn-Bm hoverEffect">
+                                                                <li><a href="" title="Retweet"><i class="fa fa-retweet"></i> 4</a></li>
+                                                                <li><a href="" title="Favourite"><i class="fa fa-star"></i> 10</a></li>
+                                                                <li><a href="" title="Reply" class="marginTop"><i class="fa fa-reply"></i> </a></li>
+                                                                <li><a href="" title="Forward" class="marginTop"><i class="fa fa-mail-forward"></i> </a></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </article>
+
+                                            </li>
+                                            <li class="large-24 small-24 no-Pg columns optimize">
+                                                <article class="tweetBox clearfix">
+                                                    <div data-tooltip class="tip-top radius" title="New Tweet"><span class="newAlert"></span></div>
+                                                    <div class="large-3 small-3 columns no-Pg"><img src="https://pbs.twimg.com/profile_images/420826194083213312/CP1RmLa3.jpeg" alt="Paul" class="circular"> </div>
+                                                    <div class="large-16 small-16 columns">
+                                                        <h1><a href="">Paul Irish</a> </h1>
+                                                        <h2><a href="">@paul_irish </a> <span>| 3s</span></h2>
+                                                    </div>
+                                                    <div class="large-5 small-5 columns">
+                                                        <div class="rankBox">
+                                                            <div class="progress success round">
+                                                                <span  data-tooltip  class = "has-tip tip-top radius"  title = "Relevance score: 17.00" > <span class="meter" style="width: 70%"></span> </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-24 small-24 columns no-Pg">
+                                                        <div class="content">
+                                                            <div class="large-24 columns media text-center">
+                                                                <img src="img/concept.jpeg" alt="" />
+                                                            </div>
+                                                            <div class="large-24 columns">
+                                                                <p>With the continuous evolution of the Web, web industry job titles are created at a very impressive rate <a href="">http://bit.ly/P4pxXZ</a>  </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="large-24 columns">
@@ -501,10 +613,10 @@
 	
 	<!-- All Message notifications -->
 	<div id="msgNotification" class="reveal-modal small messageModal" data-reveal>
-	<ul class="breadcrumbs no-Br-Rs">
-	  <li><a href="#">Messages</a></li>
-	  <li class="current"><a href="#">for So and so</a></li>
-	</ul>
+		<ul class="breadcrumbs no-Br-Rs">
+		  <li><a href="#">Messages</a></li>
+		  <li class="current"><a href="#">for So and so</a></li>
+		</ul>
       <a class="close-reveal-modal">&#215;</a>
         <article class="tweetBox clearfix no-Br">
 			<a href="" class="messageLink" ></a>
@@ -524,6 +636,13 @@
 		
 		
     </div>
+	
+	
+	<!-- scroll top -->
+	
+	<div class="scrollTop">
+		<a href="#topPosition" id="scrollUp" class="button tiny secondary no-Mn" title="Scroll up"><i class="fa fa-arrow-circle-o-up"></i></a>
+	</div>
 	
 	
 	
