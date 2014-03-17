@@ -4540,7 +4540,7 @@ button.tiny, .button.tiny {
   padding-right: 1.25rem;
   padding-bottom: 0.6875rem;
   padding-left: 1.25rem;
-  font-size: 0.6875rem;
+  font-size: 0.875rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 /* line 216, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
@@ -11059,7 +11059,7 @@ a:hover, a:active, a:focus {
   background: white;
   border: #e6e6e6 1px solid;
   border-radius: 3px;
-  padding: 10px;
+  padding: 17px 10px 10px;
   margin: 2px;
 }
 /* line 39, ../scss/_ui.scss */
@@ -11083,46 +11083,50 @@ a:hover, a:active, a:focus {
 .tweetBox h2 span {
   font-weight: 100;
 }
-/* line 65, ../scss/_ui.scss */
+/* line 66, ../scss/_ui.scss */
 .tweetBox .content {
   padding: 7px 0;
   margin: 3px 0;
   border-top: 1px dotted #e6e6e6;
 }
-/* line 70, ../scss/_ui.scss */
+/* line 71, ../scss/_ui.scss */
 .tweetBox .content a {
   color: #409bed;
 }
-/* line 72, ../scss/_ui.scss */
+/* line 73, ../scss/_ui.scss */
 .tweetBox .content a:hover {
   color: #1168b6;
 }
-/* line 77, ../scss/_ui.scss */
+/* line 78, ../scss/_ui.scss */
 .tweetBox .content p {
   font-weight: 400;
   font-size: 0.9em;
   margin: 0;
 }
-/* line 83, ../scss/_ui.scss */
+/* line 84, ../scss/_ui.scss */
 .tweetBox .content .media {
   width: 300px;
   height: 165px;
   margin: 10px 0;
   overflow: hidden;
 }
-/* line 92, ../scss/_ui.scss */
+/* line 93, ../scss/_ui.scss */
 .tweetBox .tweetAction {
   color: #999;
 }
-/* line 95, ../scss/_ui.scss */
+/* line 96, ../scss/_ui.scss */
 .tweetBox .tweetAction a {
   font-size: 0.9em;
 }
-/* line 99, ../scss/_ui.scss */
+/* line 100, ../scss/_ui.scss */
+.tweetBox .tweetAction .marginTop {
+  margin-top: 5px;
+}
+/* line 103, ../scss/_ui.scss */
 .tweetBox .tweetAction .hoverEffect {
   visibility: hidden;
 }
-/* line 105, ../scss/_ui.scss */
+/* line 109, ../scss/_ui.scss */
 .tweetBox .newAlert {
   position: absolute;
   top: 0;
@@ -11132,8 +11136,16 @@ a:hover, a:active, a:focus {
   border-top: 15px solid #f04124;
   border-right: 15px solid transparent;
 }
+/* line 118, ../scss/_ui.scss */
+.tweetBox .retweetStatus {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 0.64em;
+  color: #b3b3b3;
+}
 
-/* line 119, ../scss/_ui.scss */
+/* line 130, ../scss/_ui.scss */
 .notify {
   position: absolute;
   top: 4px;
@@ -11147,101 +11159,97 @@ a:hover, a:active, a:focus {
   padding: 3px;
 }
 
-/* line 137, ../scss/_ui.scss */
+/* line 148, ../scss/_ui.scss */
 .profile {
   margin: 10px 0 20px;
 }
-/* line 139, ../scss/_ui.scss */
+/* line 150, ../scss/_ui.scss */
 .profile h4 {
   font-size: 1em;
   color: #b3b3b3;
 }
-/* line 143, ../scss/_ui.scss */
+/* line 154, ../scss/_ui.scss */
 .profile h5 {
   font-size: 0.8em;
   color: gray;
 }
 
-/* line 149, ../scss/_ui.scss */
+/* line 160, ../scss/_ui.scss */
 .twttrStatus {
   margin: 10px 0;
 }
-/* line 151, ../scss/_ui.scss */
+/* line 162, ../scss/_ui.scss */
 .twttrStatus p {
   margin-top: 10px;
   color: gray;
 }
 
-/* line 158, ../scss/_ui.scss */
-.preferences input[type="radio"] {
-  opacity: .4;
-}
-/* line 161, ../scss/_ui.scss */
+/* line 172, ../scss/_ui.scss */
 .preferences label {
-  color: gray;
+  color: #409bed;
 }
 
-/* line 165, ../scss/_ui.scss */
+/* line 176, ../scss/_ui.scss */
 .sectionHeader {
   background: gray;
   padding: 3px;
   font-size: 0.8em;
 }
 
-/* line 171, ../scss/_ui.scss */
+/* line 182, ../scss/_ui.scss */
 .tweetComposer, .tweetReply {
   z-index: 100;
 }
-/* line 175, ../scss/_ui.scss */
+/* line 186, ../scss/_ui.scss */
 .tweetComposer a, .tweetReply a {
   padding: 6px;
   border-radius: 3px;
   font-size: .75em;
   position: fixed;
-  top: 4px;
+  top: 50px;
   right: 4px;
 }
-/* line 184, ../scss/_ui.scss */
+/* line 195, ../scss/_ui.scss */
 .tweetComposer .content, .tweetReply .content {
   box-shadow: -6px 6px 15px 0px rgba(0, 0, 0, 0.2);
   padding: 1em;
   max-width: 275px;
   border-radius: 3px;
 }
-/* line 190, ../scss/_ui.scss */
+/* line 201, ../scss/_ui.scss */
 .tweetComposer .content span, .tweetReply .content span {
   color: #b3b3b3;
 }
 
-/* line 196, ../scss/_ui.scss */
+/* line 207, ../scss/_ui.scss */
 .tweetReply {
   background: #fafafa;
 }
-/* line 199, ../scss/_ui.scss */
+/* line 210, ../scss/_ui.scss */
 .tweetReply textarea {
   margin-bottom: 10px;
 }
 
-/* line 205, ../scss/_ui.scss */
+/* line 216, ../scss/_ui.scss */
 .messageBox {
   margin: 10px 0;
 }
 
-/* line 209, ../scss/_ui.scss */
+/* line 220, ../scss/_ui.scss */
 .messageModal {
   max-height: 500px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
 }
-/* line 216, ../scss/_ui.scss */
+/* line 227, ../scss/_ui.scss */
 .messageModal blockquote {
   margin: 0;
   border-bottom: 1px solid #ddd;
   padding: 1px;
 }
 
-/* line 224, ../scss/_ui.scss */
+/* line 235, ../scss/_ui.scss */
 .messageLink {
   display: block;
   padding: 10% 5%;
@@ -11251,7 +11259,12 @@ a:hover, a:active, a:focus {
   width: 100%;
 }
 
-/* line 233, ../scss/_ui.scss */
+/* line 244, ../scss/_ui.scss */
 .reveal-modal-bg {
   z-index: 90;
+}
+
+/* line 248, ../scss/_ui.scss */
+.circular {
+  border-radius: 50%;
 }
